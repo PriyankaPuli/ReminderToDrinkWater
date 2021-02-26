@@ -37,8 +37,8 @@ public class AlarmReceiver extends BroadcastReceiver {
         Notification.Builder builder = new Notification.Builder(context,CHANNEL_ID);
         builder.setSmallIcon(android.R.drawable.ic_dialog_info)
 
-                //.setContentTitle("Hey!It's time to drink water")
-                .setContentText(message)
+                .setContentTitle("RemindMe")
+                .setContentText("Hey!It's time to drink water")
 
                 .setWhen(System.currentTimeMillis())
                 .setAutoCancel(true)
