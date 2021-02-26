@@ -42,7 +42,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 
                 .setWhen(System.currentTimeMillis())
                 .setAutoCancel(true)
-                .setContentIntent(contentIntent);
+                
         // Notify
         myNotificationManager.notify(notificationId, builder.build());
     }
