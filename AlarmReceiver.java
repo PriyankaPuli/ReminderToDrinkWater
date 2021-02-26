@@ -30,15 +30,7 @@ public class AlarmReceiver extends BroadcastReceiver {
         NotificationManager myNotificationManager =
                 (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            // For API 26 and above
-            CharSequence channelName = "My Notification";
-            int importance = NotificationManager.IMPORTANCE_DEFAULT;
-
-            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, channelName, importance);
-            myNotificationManager.createNotificationChannel(channel);
-        }
-
+       
         // Prepare Notification
 
 
